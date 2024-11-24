@@ -40,9 +40,6 @@ print(f"Subscribed to topic '{topic_building_sensors}'")
 try:
     for message in consumer:
         sensor_data = message.value
-
-        # print(f"Received raw data: {sensor_data}")
-
         sensor_id = sensor_data.get("sensor_id")
         timestamp = sensor_data.get("timestamp")
         temperature = sensor_data.get("temperature")

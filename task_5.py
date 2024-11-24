@@ -13,7 +13,7 @@ consumer = KafkaConsumer(
     key_deserializer=lambda v: json.loads(v.decode('utf-8')),
     auto_offset_reset='latest',
     enable_auto_commit=True,
-    group_id='alerts_consumer_group_1'
+    group_id='alerts_consumer_group_3'
 )
 
 # Topics to subscribe
